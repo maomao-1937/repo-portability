@@ -1,0 +1,50 @@
+[
+  {
+    "args": [
+      "repo_portability.py",
+      "--help"
+    ],
+    "exit": 0
+  },
+  {
+    "args": [
+      "repo_portability.py",
+      ".",
+      "--paths-file",
+      "examples/paths-clean.json",
+      "--format",
+      "json"
+    ],
+    "exit": 0
+  },
+  {
+    "args": [
+      "repo_portability.py",
+      ".",
+      "--paths-file",
+      "examples/paths-risky.json",
+      "--format",
+      "json"
+    ],
+    "exit": 1
+  },
+  {
+    "args": [
+      "repo_portability.py",
+      ".",
+      "--paths-file",
+      "examples/paths-invalid.json"
+    ],
+    "exit": 2
+  },
+  {
+    "args": [
+      "repo_portability.py",
+      ".",
+      "--directory",
+      "--format",
+      "json"
+    ],
+    "exit": 0
+  }
+]

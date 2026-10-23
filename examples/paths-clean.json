@@ -1,0 +1,5 @@
+[
+  "README.md",
+  "src/main.py",
+  "tests/test_cli.py"
+]
